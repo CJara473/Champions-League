@@ -4,7 +4,7 @@ import plotly.express as px
 
 # Cargar los datos
 def load_data():
-    file_path = "C:/Users/CJ/Downloads/Datos_ML_con_Target.xlsx"  # Ruta actualizada
+    file_path = "Datos_ML_con_Target.xlsx" # Ruta actualizada
     df = pd.read_excel(file_path, sheet_name="Sheet1")
     df["Total Partidos"] = df["Victorias"] + df["Empates"] + df["Derrotas"]
     df["% Victorias"] = (df["Victorias"] / df["Total Partidos"]) * 100
